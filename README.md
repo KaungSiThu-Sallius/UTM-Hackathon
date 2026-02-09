@@ -71,4 +71,4 @@ export default defineConfig([
   },
 ])
 ```
-# UTM-Hackathon
+# UTM-Hackathon-2026
