@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 min-h-screen bg-gradient-to-br from-gray-900 via-hackathon-crimson to-black text-hackathon-cream;
+  }
+}
+
+@layer utilities {
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-hackathon-coral via-hackathon-cream to-hackathon-coral bg-clip-text text-transparent;
+  }
+}
