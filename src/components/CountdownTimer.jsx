@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { eventData } from '../eventData';
 
 const CountdownTimer = () => {
     const [timeLeft, setTimeLeft] = useState({
@@ -10,8 +9,11 @@ const CountdownTimer = () => {
     });
 
     useEffect(() => {
+        // Target date: Preliminary Round - 4 May 2026
+        const countdownDate = new Date("2026-05-04T00:00:00").getTime();
+
         const calculateTimeLeft = () => {
-            const difference = eventData.hero.countdownDate - new Date().getTime();
+            const difference = countdownDate - new Date().getTime();
 
             if (difference > 0) {
                 setTimeLeft({

@@ -1,23 +1,31 @@
 import { eventData } from '../eventData';
 
 const Rules = () => {
+    const rules = eventData.rules;
+
     return (
-        <section className="py-20 px-4 relative">
+        <section id="rules" className="py-20 px-4 relative">
             <div className="max-w-6xl mx-auto">
                 {/* Section Title */}
-                <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-12 gradient-text">
-                    {eventData.rules.title}
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-4 gradient-text">
+                    Competition Rules
                 </h2>
+                <p className="text-center text-hackathon-cream/60 mb-12 text-sm sm:text-base">
+                    Please read and adhere to all competition rules
+                </p>
 
                 {/* Rules Grid */}
                 <div className="grid md:grid-cols-2 gap-6">
-                    {eventData.rules.items.map((rule, index) => (
+                    {rules.map((rule, index) => (
                         <div
                             key={index}
-                            className="glass-effect rounded-2xl p-6 sm:p-8 transform hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-hackathon-crimson/30"
+                            className={`glass-effect rounded-2xl p-6 sm:p-8 transform hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-hackathon-crimson/30 ${rules.length % 2 !== 0 && index === rules.length - 1
+                                    ? 'md:col-span-2 md:max-w-xl md:mx-auto md:w-full'
+                                    : ''
+                                }`}
                         >
                             <div className="flex items-start gap-4">
-                                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-hackathon-coral to-hackathon-crimson rounded-full flex items-center justify-center font-bold text-lg sm:text-xl">
+                                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-hackathon-coral to-hackathon-crimson rounded-full flex items-center justify-center font-bold text-lg sm:text-xl text-white">
                                     {index + 1}
                                 </div>
                                 <div className="flex-1">

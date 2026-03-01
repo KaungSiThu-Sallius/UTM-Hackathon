@@ -8,136 +8,128 @@ export const eventData = {
     hero: {
         title: "UTM HACKATHON 2026",
         subtitle: "Build. Innovate. Transform.",
-        description: "Join us for 48 hours of innovation, collaboration, and coding excellence.",
-        // Countdown target date (3 months from now: May 9, 2026)
-        countdownDate: new Date("2026-05-09T09:00:00").getTime(),
+        description: "Join us for an innovation-driven hackathon organised by Club PERSAKA, Universiti Teknologi Malaysia.",
+        // Countdown target date: Preliminary Round starts 4 May 2026
+        countdownDate: new Date("2026-05-04T00:00:00").getTime(),
+        countdownLabel: "Preliminary Round",
         registerButtonText: "Register Now",
+        registerLink: "https://kooq.my/events/utmxhackathon26",
     },
 
     // About Section
     about: {
-        title: "About the Event",
-        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+        title: "About UTMxHackathon'26",
+        content: `UTMxHackathon'26 is an exciting innovation-driven event that brings all passionate students together to transfer innovative ideas into powerful solutions. It is organized by Club PERSAKA from Universiti Teknologi Malaysia. This hackathon provides a platform to participants to collaborate, think actively, and tackle real-world challenges through technology and innovation. Throughout the event, teams will work intensively to develop their ideas, connect with like-minded innovators and showcase their creativity projects in a competitive yet inspiring environment.`,
         stats: [
-            { number: "500+", label: "Participants" },
-            { number: "48", label: "Hours" },
-            { number: "$10K", label: "In Prizes" },
-            { number: "20+", label: "Mentors" },
+            { number: "0", label: "Participants" },
+            { number: "24", label: "Hours" },
+            { number: "TBD", label: "Prize" },
+            { number: "TBD", label: "Mentors" },
         ],
     },
 
+    // Tentative / Timeline
+    tentative: [
+        { date: "2 Mar – 30 Apr", label: "Registration", mode: "Online", icon: "📋" },
+        { date: "9 Mar – 3 May", label: "Workshops", mode: "Online", icon: "🛠️" },
+        { date: "4 May", label: "Opening Ceremony & Participant Briefing", mode: "Online", icon: "🎉" },
+        { date: "4 – 10 May", label: "Preliminary Round", mode: "Online", icon: "💻" },
+        { date: "18 – 24 May", label: "Finals Round", mode: "Online", icon: "🏆" },
+        { date: "24 May", label: "Finals Round (Exhibition & Pitching)", mode: "Physical – Dewan Kejora, N28a, UTM JB", icon: "🎤" },
+    ],
+
     // Rules Section
-    rules: {
-        title: "Competition Rules",
-        items: [
-            {
-                title: "Team Formation",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teams of 2-5 members are allowed.",
-            },
-            {
-                title: "Project Requirements",
-                description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. All code must be written during the event.",
-            },
-            {
-                title: "Submission Guidelines",
-                description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Submit via our platform by the deadline.",
-            },
-            {
-                title: "Judging Criteria",
-                description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Innovation, execution, and presentation matter.",
-            },
-        ],
-    },
+    rules: [
+        {
+            title: "Team Size",
+            description: "Teams may consist of a maximum of 5 members.",
+        },
+        {
+            title: "Submission Requirements",
+            description: "All submissions are to be made via the Koo'Q system which includes a high-fidelity prototype, a poster, and a 1-minute explanation video.",
+        },
+        {
+            title: "Evaluation Criteria",
+            description: "All submissions will be evaluated based on innovation, creativity, functionality, design impact, and presentation.",
+        },
+        {
+            title: "Preliminary Round",
+            description: "The Preliminary Round will be conducted from 4 May to 10 May 2026.",
+        },
+        {
+            title: "Rule Violations",
+            description: "Any teams found guilty of violating the competition rules and regulations will be disqualified immediately.",
+        },
+    ],
 
     // FAQ Section
     faqs: [
         {
-            question: "What is a hackathon?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            question: "What is UTMxHackathon?",
+            answer: "UTMxHackathon is a hackathon event organised mainly by the Persatuan Mahasiswa Sains Komputer (PERSAKA) at Universiti Teknologi Malaysia (UTM) where teams of students collaborate to build innovative tech solutions. It's not about 'hacking' in the cybersecurity sense — instead, participants work on real-world problem statements, design prototypes or applications, and pitch their ideas to judges.",
         },
         {
-            question: "Do I need to have a team?",
-            answer: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            question: "Where and when will the event be held?",
+            answer: "Workshops will be carried out online from 9th March 2026 until 3rd May 2026. The opening ceremony and participant briefing will be held online on 4th May 2026. The preliminary round will be held online from 4th May to 10th May 2026. The final round will be held from 18th May to 24th May 2026. The grand finale will be held physically at Dewan Kejora, N28a, UTM Johor Bahru on 24th May 2026.",
         },
         {
-            question: "What should I bring?",
-            answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            question: "How do I get to UTMJB if I'm not a student from UTM?",
+            answer: "E-hailing services such as Grab, Maxim, and AirAsia Ride are recommended for transportation throughout the area. If you are flying to JB, you will arrive at Senai Airport. If you are taking a bus to JB, you will arrive at Larkin Bus Central.",
         },
         {
-            question: "Is there a registration fee?",
-            answer: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            question: "Who can participate?",
+            answer: "All undergraduate level university students around Malaysia.",
         },
         {
-            question: "Will food be provided?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Meals and snacks will be provided throughout the event.",
+            question: "Who can fill in the Google Form?",
+            answer: "Anyone can fill in the Google Form. However, only 1 response is needed for each team.",
         },
         {
-            question: "Can beginners participate?",
-            answer: "Absolutely! Sed do eiusmod tempor incididunt ut labore. We welcome hackers of all skill levels.",
+            question: "How much is the registration fee?",
+            answer: "We are not claiming any registration fee from participants. It's free of charge.",
+        },
+        {
+            question: "Can I join if I only have 1 member as a team?",
+            answer: "Absolutely! The team can consist of up to 5 members.",
+        },
+        {
+            question: "Can I back out from the competition?",
+            answer: "Yes, all teams are free to back out from the competition at any phase if they wish to.",
         },
     ],
 
-    // Sponsor Tiers
+    // Sponsors Section
     sponsors: {
         title: "Our Sponsors",
-        tiers: [
-            {
-                name: "Platinum",
-                color: "from-gray-200 to-gray-400",
-                companies: [
-                    { name: "TechCorp Global", logo: "https://via.placeholder.com/200x80/E5E7EB/1F2937?text=TechCorp" },
-                    { name: "Innovation Labs", logo: "https://via.placeholder.com/200x80/E5E7EB/1F2937?text=Innovation+Labs" },
-                ],
-            },
-            {
-                name: "Gold",
-                color: "from-yellow-400 to-yellow-600",
-                companies: [
-                    { name: "StartupHub", logo: "https://via.placeholder.com/180x70/FDE047/854D0E?text=StartupHub" },
-                    { name: "CodeMasters", logo: "https://via.placeholder.com/180x70/FDE047/854D0E?text=CodeMasters" },
-                    { name: "DevTools Inc", logo: "https://via.placeholder.com/180x70/FDE047/854D0E?text=DevTools" },
-                ],
-            },
-            {
-                name: "Silver",
-                color: "from-gray-300 to-gray-500",
-                companies: [
-                    { name: "CloudServe", logo: "https://via.placeholder.com/160x60/D1D5DB/374151?text=CloudServe" },
-                    { name: "DataFlow", logo: "https://via.placeholder.com/160x60/D1D5DB/374151?text=DataFlow" },
-                    { name: "AppBuilder", logo: "https://via.placeholder.com/160x60/D1D5DB/374151?text=AppBuilder" },
-                    { name: "WebSolutions", logo: "https://via.placeholder.com/160x60/D1D5DB/374151?text=WebSolutions" },
-                ],
-            },
-        ],
+        comingSoon: true,
+        tiers: [], // TBD – will be updated when sponsors are confirmed
+        interested: {
+            title: "Interested in Sponsoring?",
+            description: "Join us in supporting the next generation of innovators and get your brand in front of talented students. Download our prospectus to find out more.",
+            prospectusLink: "/prospectus.pdf",
+            contacts: [
+                {
+                    name: "Hoe Zhi Wan",
+                    role: "Director of Hackathon '26",
+                    phone: "+6017-5259491",
+                    email: "hoezhiwan@graduate.utm.my",
+                },
+                {
+                    name: "Asilah Binti Mohd Razak",
+                    role: "Head of Sponsorship Unit",
+                    phone: "+6011-39712366",
+                    email: "asilah04@graduate.utm.my",
+                },
+            ],
+        },
     },
 
-    // Schedule (for future use)
-    schedule: [
-        { time: "9:00 AM", event: "Registration & Breakfast", day: "Day 1" },
-        { time: "10:00 AM", event: "Opening Ceremony", day: "Day 1" },
-        { time: "11:00 AM", event: "Hacking Begins!", day: "Day 1" },
-        { time: "1:00 PM", event: "Lunch", day: "Day 1" },
-        { time: "6:00 PM", event: "Dinner", day: "Day 1" },
-        { time: "12:00 AM", event: "Midnight Snacks", day: "Day 1" },
-        { time: "8:00 AM", event: "Breakfast", day: "Day 2" },
-        { time: "11:00 AM", event: "Hacking Ends", day: "Day 2" },
-        { time: "12:00 PM", event: "Project Presentations", day: "Day 2" },
-        { time: "3:00 PM", event: "Awards Ceremony", day: "Day 2" },
-    ],
-
-    // Social Links
+    // Social / Footer Links
     social: {
-        twitter: "#",
-        instagram: "#",
-        linkedin: "#",
-        discord: "#",
-    },
-
-    // Contact
-    contact: {
-        email: "hello@utmhackathon.com",
-        location: "University of Technology Malaysia",
+        email: "hackathon.persakautm@gmail.com",
+        telegram: { label: "PERSAKA", url: "https://t.me/persakautm" },
+        instagram: { label: "@utmxhackathon26", url: "https://www.instagram.com/utmxhackathon26/" },
+        linkedin: { label: "PERSAKA", url: "https://my.linkedin.com/company/persaka" },
+        facebook: { label: "UTM PERSAKA", url: "https://www.facebook.com/utmpersaka/?locale=ms_MY" },
     },
 };

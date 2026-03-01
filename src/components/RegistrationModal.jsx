@@ -1,50 +1,62 @@
-import { useState } from 'react';
+const REGISTER_URL = 'https://kooq.my/events/utmxhackathon26';
+const QR_SRC = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(REGISTER_URL)}`;
 
 const RegistrationModal = ({ isOpen, onClose }) => {
     if (!isOpen) return null;
 
     return (
         <div
-            className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+            className="fixed inset-0 bg-black/75 backdrop-blur-sm flex items-center justify-center z-50 p-4"
             onClick={onClose}
         >
             <div
-                className="glass-effect rounded-3xl p-8 sm:p-12 max-w-md w-full transform transition-all duration-300 scale-100 hover:scale-[1.02]"
+                className="glass-effect rounded-3xl p-8 sm:p-10 max-w-sm w-full relative"
                 onClick={(e) => e.stopPropagation()}
             >
+                {/* Close button */}
+                <button
+                    onClick={onClose}
+                    className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-hackathon-cream/70 hover:text-hackathon-cream transition-all duration-200"
+                    aria-label="Close"
+                >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
                 <div className="text-center">
-                    <div className="mb-6">
-                        <div className="w-20 h-20 mx-auto bg-gradient-to-br from-hackathon-coral to-hackathon-crimson rounded-full flex items-center justify-center animate-pulse">
-                            <svg
-                                className="w-10 h-10 text-hackathon-cream"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                                />
-                            </svg>
+                    {/* Title */}
+                    <h2 className="text-2xl sm:text-3xl font-bold gradient-text mb-1">Register Now</h2>
+                    <p className="text-hackathon-cream/60 text-sm mb-6">Scan the QR code or click the link below</p>
+
+                    {/* QR Code */}
+                    <div className="flex justify-center mb-5">
+                        <div className="bg-white rounded-2xl p-3 shadow-xl shadow-hackathon-coral/20">
+                            <img
+                                src={QR_SRC}
+                                alt="Scan to Register"
+                                className="w-44 h-44 sm:w-48 sm:h-48"
+                            />
                         </div>
                     </div>
 
-                    <h2 className="text-3xl sm:text-4xl font-bold gradient-text mb-4">
-                        Coming Soon!
-                    </h2>
+                    {/* Divider */}
+                    <div className="flex items-center gap-3 mb-5">
+                        <div className="flex-1 h-px bg-white/10" />
+                        <span className="text-hackathon-cream/40 text-xs uppercase tracking-widest">or</span>
+                        <div className="flex-1 h-px bg-white/10" />
+                    </div>
 
-                    <p className="text-hackathon-cream/80 text-base sm:text-lg mb-8 leading-relaxed">
-                        Registration will open soon. Stay tuned for updates and be ready to secure your spot!
-                    </p>
-
-                    <button
-                        onClick={onClose}
-                        className="w-full bg-gradient-to-r from-hackathon-coral to-hackathon-crimson text-hackathon-cream font-bold py-4 px-8 rounded-xl hover:shadow-2xl hover:shadow-hackathon-coral/50 transition-all duration-300 transform hover:scale-105"
+                    {/* Clickable link */}
+                    <a
+                        href={REGISTER_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block w-full bg-gradient-to-r from-hackathon-coral to-hackathon-crimson text-white font-bold py-4 px-6 rounded-xl hover:shadow-2xl hover:shadow-hackathon-coral/50 transition-all duration-300 hover:scale-105 text-sm sm:text-base break-all"
                     >
-                        Got It!
-                    </button>
+                        🔗 Go to Registration Page
+                    </a>
+                    <p className="text-hackathon-cream/40 text-xs mt-3">Opens Koo'Q registration page</p>
                 </div>
             </div>
         </div>
