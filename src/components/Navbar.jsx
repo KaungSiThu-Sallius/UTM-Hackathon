@@ -65,9 +65,11 @@ const Navbar = ({ onRegisterClick }) => {
                         onClick={() => handleNavClick('#home')}
                         className="flex items-center gap-2 group"
                     >
-                        <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-br from-hackathon-coral to-hackathon-crimson flex items-center justify-center font-black text-white text-xs sm:text-sm shadow-lg group-hover:scale-110 transition-transform">
-                            UTM
-                        </div>
+                        <img
+                            src="/utm-logo.png"
+                            alt="UTM Logo"
+                            className="w-10 h-10 sm:w-12 sm:h-12 object-contain drop-shadow-lg group-hover:scale-110 transition-transform"
+                        />
                         <span className="font-bold text-sm sm:text-base text-hackathon-cream group-hover:text-hackathon-coral transition-colors hidden xs:block">
                             UTMxHackathon<span className="text-hackathon-coral">'26</span>
                         </span>
