@@ -9,15 +9,8 @@ const navLinks = [
             { label: 'Rules', href: '#rules' },
         ],
     },
-    // {
-    //     label: 'Experts',
-    //     dropdown: [
-    //         { label: 'Speakers', href: '#speakers' },
-    //         { label: 'Mentors', href: '#mentors' },
-    //     ],
-    // },
-    { label: 'Sponsors', href: '#sponsors' },
     { label: 'FAQ', href: '#faq' },
+    { label: 'Sponsors', href: '#sponsors' },
 ];
 
 const Navbar = ({ onRegisterClick }) => {
@@ -54,24 +47,24 @@ const Navbar = ({ onRegisterClick }) => {
     return (
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                ? 'bg-black/80 backdrop-blur-xl shadow-lg shadow-black/30 border-b border-white/10'
+                ? 'bg-white/90 backdrop-blur-xl shadow-md shadow-hackathon-wine/10 border-b border-hackathon-wine/10'
                 : 'bg-transparent'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" ref={dropdownRef}>
                 <div className="flex items-center justify-between h-16 sm:h-20">
-                    {/* Logo / Brand */}
+                    {/* Logo / Brand — Event logo */}
                     <button
                         onClick={() => handleNavClick('#home')}
                         className="flex items-center gap-2 group"
                     >
                         <img
-                            src="/utm-logo.png"
-                            alt="UTM Logo"
-                            className="w-10 h-10 sm:w-12 sm:h-12 object-contain drop-shadow-lg group-hover:scale-110 transition-transform"
+                            src="/Hackathon 25 Logo.png"
+                            alt="UTMxHackathon Logo"
+                            className="w-16 h-16 sm:w-16 sm:h-16 object-contain drop-shadow group-hover:scale-110 transition-transform"
                         />
-                        <span className="font-bold text-sm sm:text-base text-hackathon-cream group-hover:text-hackathon-coral transition-colors hidden xs:block">
-                            UTMxHackathon<span className="text-hackathon-coral">'26</span>
+                        <span className="font-bold text-sm sm:text-base text-hackathon-wine group-hover:text-hackathon-crimson transition-colors hidden xs:block">
+                            UTMxHackathon<span className="text-hackathon-crimson">'26</span>
                         </span>
                     </button>
 
@@ -84,7 +77,7 @@ const Navbar = ({ onRegisterClick }) => {
                                         onClick={() =>
                                             setActiveDropdown(activeDropdown === link.label ? null : link.label)
                                         }
-                                        className="flex items-center gap-1 px-4 py-2 rounded-lg text-hackathon-cream/80 hover:text-hackathon-coral hover:bg-white/5 font-medium text-sm transition-all duration-200"
+                                        className="flex items-center gap-1 px-4 py-2 rounded-lg text-hackathon-gray hover:text-hackathon-wine hover:bg-hackathon-wine/5 font-medium text-sm transition-all duration-200"
                                     >
                                         {link.label}
                                         <svg
@@ -97,12 +90,12 @@ const Navbar = ({ onRegisterClick }) => {
 
                                     {/* Dropdown Menu */}
                                     {activeDropdown === link.label && (
-                                        <div className="absolute top-full left-0 mt-2 w-44 bg-black/90 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl overflow-hidden">
+                                        <div className="absolute top-full left-0 mt-2 w-44 bg-white border border-hackathon-wine/10 rounded-xl shadow-xl shadow-hackathon-wine/10 overflow-hidden">
                                             {link.dropdown.map((item) => (
                                                 <button
                                                     key={item.label}
                                                     onClick={() => handleNavClick(item.href)}
-                                                    className="w-full text-left px-4 py-3 text-sm text-hackathon-cream/80 hover:text-hackathon-coral hover:bg-white/5 transition-all duration-150"
+                                                    className="w-full text-left px-4 py-3 text-sm text-hackathon-gray hover:text-hackathon-wine hover:bg-hackathon-wine/5 transition-all duration-150"
                                                 >
                                                     {item.label}
                                                 </button>
@@ -114,7 +107,7 @@ const Navbar = ({ onRegisterClick }) => {
                                 <button
                                     key={link.label}
                                     onClick={() => handleNavClick(link.href)}
-                                    className="px-4 py-2 rounded-lg text-hackathon-cream/80 hover:text-hackathon-coral hover:bg-white/5 font-medium text-sm transition-all duration-200"
+                                    className="px-4 py-2 rounded-lg text-hackathon-gray hover:text-hackathon-wine hover:bg-hackathon-wine/5 font-medium text-sm transition-all duration-200"
                                 >
                                     {link.label}
                                 </button>
@@ -125,7 +118,7 @@ const Navbar = ({ onRegisterClick }) => {
                     <div className="hidden md:flex items-center gap-3">
                         <button
                             onClick={onRegisterClick}
-                            className="px-5 py-2.5 bg-gradient-to-r from-hackathon-coral to-hackathon-crimson text-white font-bold text-sm rounded-full hover:shadow-lg hover:shadow-hackathon-coral/40 hover:scale-105 transition-all duration-200"
+                            className="px-5 py-2.5 bg-hackathon-wine text-white font-bold text-sm rounded-full hover:bg-hackathon-crimson hover:shadow-lg hover:shadow-hackathon-wine/30 hover:scale-105 transition-all duration-200"
                         >
                             Register Now
                         </button>
@@ -134,7 +127,7 @@ const Navbar = ({ onRegisterClick }) => {
                     {/* Mobile burger */}
                     <button
                         onClick={() => setMobileOpen(!mobileOpen)}
-                        className="md:hidden p-2 rounded-lg text-hackathon-cream hover:bg-white/10 transition-colors"
+                        className="md:hidden p-2 rounded-lg text-hackathon-wine hover:bg-hackathon-wine/10 transition-colors"
                         aria-label="Toggle menu"
                     >
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -149,18 +142,18 @@ const Navbar = ({ onRegisterClick }) => {
 
                 {/* Mobile Menu */}
                 {mobileOpen && (
-                    <div className="md:hidden pb-4 border-t border-white/10 mt-2 bg-black/90 backdrop-blur-xl rounded-b-2xl">
+                    <div className="md:hidden pb-4 border-t border-hackathon-wine/10 mt-2 bg-white/95 backdrop-blur-xl rounded-b-2xl">
                         {navLinks.map((link) =>
                             link.dropdown ? (
                                 <div key={link.label}>
-                                    <p className="px-4 pt-3 pb-1 text-xs text-hackathon-coral/60 uppercase tracking-widest font-semibold">
+                                    <p className="px-4 pt-3 pb-1 text-xs text-hackathon-wine/60 uppercase tracking-widest font-semibold">
                                         {link.label}
                                     </p>
                                     {link.dropdown.map((item) => (
                                         <button
                                             key={item.label}
                                             onClick={() => handleNavClick(item.href)}
-                                            className="w-full text-left px-6 py-2.5 text-sm text-hackathon-cream/80 hover:text-hackathon-coral transition-colors"
+                                            className="w-full text-left px-6 py-2.5 text-sm text-hackathon-gray hover:text-hackathon-wine transition-colors"
                                         >
                                             {item.label}
                                         </button>
@@ -170,7 +163,7 @@ const Navbar = ({ onRegisterClick }) => {
                                 <button
                                     key={link.label}
                                     onClick={() => handleNavClick(link.href)}
-                                    className="w-full text-left px-4 py-3 text-sm font-medium text-hackathon-cream/80 hover:text-hackathon-coral transition-colors"
+                                    className="w-full text-left px-4 py-3 text-sm font-medium text-hackathon-gray hover:text-hackathon-wine transition-colors"
                                 >
                                     {link.label}
                                 </button>
@@ -179,7 +172,7 @@ const Navbar = ({ onRegisterClick }) => {
                         <div className="px-4 pt-3">
                             <button
                                 onClick={() => { setMobileOpen(false); onRegisterClick(); }}
-                                className="w-full py-3 bg-gradient-to-r from-hackathon-coral to-hackathon-crimson text-white font-bold text-sm rounded-full"
+                                className="w-full py-3 bg-hackathon-wine text-white font-bold text-sm rounded-full hover:bg-hackathon-crimson transition-colors"
                             >
                                 Register Now
                             </button>

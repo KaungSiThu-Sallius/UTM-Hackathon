@@ -4,16 +4,24 @@
 
 @layer base {
   body {
-    @apply m-0 min-h-screen bg-gradient-to-br from-gray-900 via-hackathon-crimson to-black text-hackathon-cream;
+    @apply m-0 min-h-screen bg-hackathon-beige text-hackathon-gray;
+    background: linear-gradient(145deg, #FDF6EE 0%, #F5E6D3 50%, #EDD9C0 100%);
   }
 }
 
 @layer utilities {
+  /* Card style — warm white with subtle wine border on light bg */
   .glass-effect {
-    @apply bg-white/10 backdrop-blur-lg border border-white/20;
+    @apply bg-white/80 backdrop-blur-sm border border-hackathon-wine/15 shadow-sm;
   }
-  
+
+  /* Gradient text — wine/crimson on light background */
   .gradient-text {
-    @apply bg-gradient-to-r from-hackathon-coral via-hackathon-cream to-hackathon-coral bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-hackathon-wine via-hackathon-crimson to-hackathon-wine bg-clip-text text-transparent;
+  }
+
+  /* Section divider shade — slightly darker beige rows */
+  .section-alt {
+    background: rgba(231, 211, 189, 0.45);
   }
 }

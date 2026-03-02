@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { eventData } from '../eventData';
 
 const CountdownTimer = () => {
     const [timeLeft, setTimeLeft] = useState({
@@ -9,8 +10,7 @@ const CountdownTimer = () => {
     });
 
     useEffect(() => {
-        // Target date: Preliminary Round - 4 May 2026
-        const countdownDate = new Date("2026-05-04T00:00:00").getTime();
+        const countdownDate = eventData.hero.countdownDate;
 
         const calculateTimeLeft = () => {
             const difference = countdownDate - new Date().getTime();
@@ -38,7 +38,7 @@ const CountdownTimer = () => {
                     {String(value).padStart(2, '0')}
                 </div>
             </div>
-            <div className="text-hackathon-coral text-xs sm:text-sm md:text-base font-semibold mt-2 uppercase tracking-wider">
+            <div className="text-hackathon-wine text-xs sm:text-sm md:text-base font-semibold mt-2 uppercase tracking-wider">
                 {label}
             </div>
         </div>

@@ -28,7 +28,7 @@ const FAQ = () => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.3 }}
-                    className="text-center text-hackathon-cream/60 mb-12 text-sm sm:text-base"
+                    className="text-center text-hackathon-gray/60 mb-12 text-sm sm:text-base"
                 >
                     Got questions? We've got answers.
                 </motion.p>
@@ -50,17 +50,17 @@ const FAQ = () => {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.15 }}
-                            className="glass-effect rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-hackathon-coral/20"
+                            className="glass-effect rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-hackathon-wine/15"
                         >
                             <button
                                 onClick={() => toggleFAQ(index)}
-                                className="w-full text-left p-6 sm:p-8 flex justify-between items-center gap-4 hover:bg-white/5 transition-colors duration-200"
+                                className="w-full text-left p-6 sm:p-8 flex justify-between items-center gap-4 hover:bg-hackathon-wine/5 transition-colors duration-200"
                             >
-                                <h3 className="text-base sm:text-lg font-bold text-hackathon-cream">
+                                <h3 className="text-base sm:text-lg font-bold text-hackathon-gray">
                                     {faq.question}
                                 </h3>
                                 <svg
-                                    className={`w-6 h-6 text-hackathon-coral flex-shrink-0 transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}
+                                    className={`w-6 h-6 text-hackathon-wine flex-shrink-0 transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -73,7 +73,7 @@ const FAQ = () => {
                                 className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-96' : 'max-h-0'}`}
                             >
                                 <div className="px-6 sm:px-8 pb-6 sm:pb-8">
-                                    <p className="text-hackathon-cream/80 text-sm sm:text-base leading-relaxed border-t border-white/10 pt-4">
+                                    <p className="text-hackathon-gray/80 text-sm sm:text-base leading-relaxed border-t border-hackathon-wine/10 pt-4">
                                         {faq.answer}
                                     </p>
                                 </div>

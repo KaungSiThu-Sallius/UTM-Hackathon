@@ -32,7 +32,7 @@ const About = () => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.3 }}
-                    className="text-center text-hackathon-cream/60 mb-12 text-sm sm:text-base"
+                    className="text-center text-hackathon-gray/60 mb-12 text-sm sm:text-base"
                 >
                     Organised by Club PERSAKA · Universiti Teknologi Malaysia
                 </motion.p>
@@ -45,13 +45,13 @@ const About = () => {
                     viewport={{ once: true, amount: 0.2 }}
                     className="glass-effect rounded-3xl p-8 sm:p-12 mb-12"
                 >
-                    <p className="text-hackathon-cream/90 text-base sm:text-lg leading-relaxed text-justify">
+                    <p className="text-hackathon-gray text-base sm:text-lg leading-relaxed text-justify">
                         {about.content}
                     </p>
                 </motion.div>
 
                 {/* Stats Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                <div className="grid grid-cols-3 gap-4 sm:gap-6 max-w-2xl mx-auto">
                     {about.stats.map((stat, index) => (
                         <motion.div
                             key={index}
@@ -67,12 +67,12 @@ const About = () => {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.3 }}
-                            className="glass-effect rounded-2xl p-6 sm:p-8 text-center transform hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-hackathon-coral/30"
+                            className="glass-effect rounded-2xl p-6 sm:p-8 text-center transform hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-hackathon-wine/20"
                         >
-                            <div className="text-3xl sm:text-4xl md:text-5xl font-black gradient-text mb-2">
+                            <div className="text-3xl sm:text-4xl font-black gradient-text mb-2 whitespace-nowrap">
                                 {stat.number}
                             </div>
-                            <div className="text-hackathon-coral text-sm sm:text-base font-semibold uppercase tracking-wide">
+                            <div className="text-hackathon-wine text-sm sm:text-base font-semibold uppercase tracking-wide">
                                 {stat.label}
                             </div>
                         </motion.div>

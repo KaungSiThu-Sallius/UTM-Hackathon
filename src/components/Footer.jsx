@@ -46,40 +46,57 @@ const Footer = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
-            className="py-12 px-4 border-t border-white/10 relative"
+            className="py-12 px-4 border-t border-hackathon-wine/15 bg-hackathon-parchment/60 relative"
         >
             <div className="max-w-6xl mx-auto">
                 <div className="grid md:grid-cols-3 gap-10 mb-10">
-                    {/* Brand */}
+                    {/* Brand — Event logo + UTM logo */}
                     <div className="md:col-span-1">
                         <div className="flex items-center gap-3 mb-4">
-                            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-hackathon-coral to-hackathon-crimson flex items-center justify-center font-black text-white text-xs shadow-lg">
-                                UTM
-                            </div>
+                            <img
+                                src="/Hackathon 25 Logo.png"
+                                alt="UTMxHackathon Logo"
+                                className="w-10 h-10 object-contain"
+                            />
                             <div>
-                                <p className="font-bold text-hackathon-cream text-base leading-tight">UTMxHackathon<span className="text-hackathon-coral">'26</span></p>
-                                <p className="text-hackathon-cream/40 text-xs">Organised by Club PERSAKA</p>
+                                <p className="font-bold text-hackathon-wine text-base leading-tight">UTMxHackathon<span className="text-hackathon-crimson">'26</span></p>
+                                <p className="text-hackathon-gray/50 text-xs">Organised by Club PERSAKA</p>
                             </div>
                         </div>
-                        <p className="text-hackathon-cream/60 text-sm leading-relaxed">
+                        <p className="text-hackathon-gray/60 text-sm leading-relaxed mb-5">
                             Build. Innovate. Transform. — An innovation-driven hackathon at Universiti Teknologi Malaysia.
                         </p>
+                        {/* UTM Logo in footer */}
+                        <div className="flex items-center gap-2">
+                            <img
+                                src="/utm-logo.png"
+                                alt="UTM Logo"
+                                className="w-8 h-8 object-contain opacity-70"
+                            />
+                            <span className="text-hackathon-gray/50 text-xs">Universiti Teknologi Malaysia</span>
+                        </div>
                     </div>
 
-                    {/* Quick Links */}
+                    {/* Quick Links — matching nav order */}
                     <div>
-                        <h4 className="text-hackathon-coral font-bold mb-4 text-sm uppercase tracking-widest">Quick Links</h4>
+                        <h4 className="text-hackathon-wine font-bold mb-4 text-sm uppercase tracking-widest">Quick Links</h4>
                         <ul className="space-y-2 text-sm">
-                            {['#home', '#tentative', '#rules', '#faq', '#sponsors'].map((href) => (
+                            {[
+                                { label: 'Home', href: '#home' },
+                                { label: 'Tentative', href: '#tentative' },
+                                { label: 'Rules', href: '#rules' },
+                                { label: 'FAQ', href: '#faq' },
+                                { label: 'Sponsors', href: '#sponsors' },
+                            ].map(({ label, href }) => (
                                 <li key={href}>
                                     <button
                                         onClick={() => {
                                             const el = document.querySelector(href);
                                             if (el) el.scrollIntoView({ behavior: 'smooth' });
                                         }}
-                                        className="text-hackathon-cream/60 hover:text-hackathon-coral transition-colors capitalize"
+                                        className="text-hackathon-gray/60 hover:text-hackathon-wine transition-colors"
                                     >
-                                        {href.replace('#', '').charAt(0).toUpperCase() + href.replace('#', '').slice(1)}
+                                        {label}
                                     </button>
                                 </li>
                             ))}
@@ -88,7 +105,7 @@ const Footer = () => {
 
                     {/* Contact & Social */}
                     <div>
-                        <h4 className="text-hackathon-coral font-bold mb-4 text-sm uppercase tracking-widest">Connect With Us</h4>
+                        <h4 className="text-hackathon-wine font-bold mb-4 text-sm uppercase tracking-widest">Connect With Us</h4>
                         <ul className="space-y-3">
                             {links.map(({ key, label, href }) => (
                                 <li key={key}>
@@ -96,9 +113,9 @@ const Footer = () => {
                                         href={href}
                                         target={href.startsWith('mailto') ? '_self' : '_blank'}
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-3 text-hackathon-cream/60 hover:text-hackathon-coral transition-colors group text-sm"
+                                        className="flex items-center gap-3 text-hackathon-gray/60 hover:text-hackathon-wine transition-colors group text-sm"
                                     >
-                                        <span className="text-hackathon-coral/60 group-hover:text-hackathon-coral transition-colors flex-shrink-0">
+                                        <span className="text-hackathon-wine/50 group-hover:text-hackathon-wine transition-colors flex-shrink-0">
                                             {socialIcons[key]}
                                         </span>
                                         <span className="truncate">{label}</span>
@@ -110,8 +127,8 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom bar */}
-                <div className="text-center pt-8 border-t border-white/10">
-                    <p className="text-hackathon-cream/40 text-xs sm:text-sm">
+                <div className="text-center pt-8 border-t border-hackathon-wine/10">
+                    <p className="text-hackathon-gray/40 text-xs sm:text-sm">
                         © {new Date().getFullYear()} UTMxHackathon'26 · Club PERSAKA, Universiti Teknologi Malaysia · All rights reserved.
                     </p>
                 </div>

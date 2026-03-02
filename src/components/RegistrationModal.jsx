@@ -6,17 +6,17 @@ const RegistrationModal = ({ isOpen, onClose }) => {
 
     return (
         <div
-            className="fixed inset-0 bg-black/75 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4"
             onClick={onClose}
         >
             <div
-                className="glass-effect rounded-3xl p-8 sm:p-10 max-w-sm w-full relative"
+                className="bg-white rounded-3xl p-8 sm:p-10 max-w-sm w-full relative shadow-2xl shadow-hackathon-wine/20 border border-hackathon-wine/10"
                 onClick={(e) => e.stopPropagation()}
             >
                 {/* Close button */}
                 <button
                     onClick={onClose}
-                    className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-hackathon-cream/70 hover:text-hackathon-cream transition-all duration-200"
+                    className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-hackathon-wine/10 hover:bg-hackathon-wine/20 text-hackathon-wine/70 hover:text-hackathon-wine transition-all duration-200"
                     aria-label="Close"
                 >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -27,11 +27,11 @@ const RegistrationModal = ({ isOpen, onClose }) => {
                 <div className="text-center">
                     {/* Title */}
                     <h2 className="text-2xl sm:text-3xl font-bold gradient-text mb-1">Register Now</h2>
-                    <p className="text-hackathon-cream/60 text-sm mb-6">Scan the QR code or click the link below</p>
+                    <p className="text-hackathon-gray/60 text-sm mb-6">Scan the QR code or click the link below</p>
 
                     {/* QR Code */}
                     <div className="flex justify-center mb-5">
-                        <div className="bg-white rounded-2xl p-3 shadow-xl shadow-hackathon-coral/20">
+                        <div className="bg-white rounded-2xl p-3 shadow-lg shadow-hackathon-wine/10 border border-hackathon-wine/10">
                             <img
                                 src={QR_SRC}
                                 alt="Scan to Register"
@@ -42,21 +42,21 @@ const RegistrationModal = ({ isOpen, onClose }) => {
 
                     {/* Divider */}
                     <div className="flex items-center gap-3 mb-5">
-                        <div className="flex-1 h-px bg-white/10" />
-                        <span className="text-hackathon-cream/40 text-xs uppercase tracking-widest">or</span>
-                        <div className="flex-1 h-px bg-white/10" />
+                        <div className="flex-1 h-px bg-hackathon-wine/10" />
+                        <span className="text-hackathon-gray/40 text-xs uppercase tracking-widest">or</span>
+                        <div className="flex-1 h-px bg-hackathon-wine/10" />
                     </div>
 
-                    {/* Clickable link */}
+                    {/* CTA link */}
                     <a
                         href={REGISTER_URL}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block w-full bg-gradient-to-r from-hackathon-coral to-hackathon-crimson text-white font-bold py-4 px-6 rounded-xl hover:shadow-2xl hover:shadow-hackathon-coral/50 transition-all duration-300 hover:scale-105 text-sm sm:text-base break-all"
+                        className="block w-full bg-hackathon-wine text-white font-bold py-4 px-6 rounded-xl hover:bg-hackathon-crimson hover:shadow-xl hover:shadow-hackathon-wine/30 transition-all duration-300 hover:scale-105 text-sm sm:text-base"
                     >
                         🔗 Go to Registration Page
                     </a>
-                    <p className="text-hackathon-cream/40 text-xs mt-3">Opens Koo'Q registration page</p>
+                    <p className="text-hackathon-gray/40 text-xs mt-3">Opens Koo'Q registration page</p>
                 </div>
             </div>
         </div>

@@ -6,12 +6,12 @@
 export const eventData = {
     // Hero Section
     hero: {
-        title: "UTM HACKATHON 2026",
+        title: "UTMxHackathon 2026",
         subtitle: "Build. Innovate. Transform.",
-        description: "Join us for an innovation-driven hackathon organised by Club PERSAKA, Universiti Teknologi Malaysia.",
-        // Countdown target date: Preliminary Round starts 4 May 2026
-        countdownDate: new Date("2026-05-04T00:00:00").getTime(),
-        countdownLabel: "Preliminary Round",
+        description: "An innovation-driven hackathon organised by Club PERSAKA, Universiti Teknologi Malaysia.",
+        // Countdown target date: Registration closes 30 Apr 2026
+        countdownDate: new Date("2026-04-30T23:59:59").getTime(),
+        countdownLabel: "Registration Close",
         registerButtonText: "Register Now",
         registerLink: "https://kooq.my/events/utmxhackathon26",
     },
@@ -19,12 +19,11 @@ export const eventData = {
     // About Section
     about: {
         title: "About UTMxHackathon'26",
-        content: `UTMxHackathon'26 is an exciting innovation-driven event that brings all passionate students together to transfer innovative ideas into powerful solutions. It is organized by Club PERSAKA from Universiti Teknologi Malaysia. This hackathon provides a platform to participants to collaborate, think actively, and tackle real-world challenges through technology and innovation. Throughout the event, teams will work intensively to develop their ideas, connect with like-minded innovators and showcase their creativity projects in a competitive yet inspiring environment.`,
+        content: `UTMxHackathon'26 is an exciting innovation-driven event that brings all passionate students together to transform innovative ideas into powerful solutions. It is organized by Club PERSAKA from Universiti Teknologi Malaysia. This hackathon provides a platform for participants to collaborate, think critically, and tackle real-world challenges through technology and innovation. Throughout the event, teams will work intensively to develop their ideas, connect with like-minded innovators, and showcase their creativity in a competitive yet inspiring environment.`,
         stats: [
-            { number: "0", label: "Participants" },
             { number: "24", label: "Hours" },
-            { number: "TBD", label: "Prize" },
-            { number: "TBD", label: "Mentors" },
+            { number: "5", label: "Max Team Size" },
+            { number: "May 24", label: "Grand Finale" },
         ],
     },
 
@@ -42,11 +41,11 @@ export const eventData = {
     rules: [
         {
             title: "Team Size",
-            description: "Teams may consist of a maximum of 5 members.",
+            description: "Teams may consist of 1 to 5 members. Solo participants are welcome.",
         },
         {
             title: "Submission Requirements",
-            description: "All submissions are to be made via the Koo'Q system which includes a high-fidelity prototype, a poster, and a 1-minute explanation video.",
+            description: "All submissions are to be made via the Koo'Q system. Required deliverables include a working prototype or demo, a project poster, and a 3-minute pitch video.",
         },
         {
             title: "Evaluation Criteria",
@@ -54,7 +53,7 @@ export const eventData = {
         },
         {
             title: "Preliminary Round",
-            description: "The Preliminary Round will be conducted from 4 May to 10 May 2026.",
+            description: "The Preliminary Round will be conducted online from 4 May to 10 May 2026.",
         },
         {
             title: "Rule Violations",
@@ -66,31 +65,23 @@ export const eventData = {
     faqs: [
         {
             question: "What is UTMxHackathon?",
-            answer: "UTMxHackathon is a hackathon event organised mainly by the Persatuan Mahasiswa Sains Komputer (PERSAKA) at Universiti Teknologi Malaysia (UTM) where teams of students collaborate to build innovative tech solutions. It's not about 'hacking' in the cybersecurity sense — instead, participants work on real-world problem statements, design prototypes or applications, and pitch their ideas to judges.",
+            answer: "UTMxHackathon is a hackathon event organised by the Persatuan Mahasiswa Sains Komputer (PERSAKA) at Universiti Teknologi Malaysia (UTM) where teams of students collaborate to build innovative tech solutions. Participants work on real-world problem statements, design prototypes or applications, and pitch their ideas to judges.",
         },
         {
             question: "Where and when will the event be held?",
             answer: "Workshops will be carried out online from 9th March 2026 until 3rd May 2026. The opening ceremony and participant briefing will be held online on 4th May 2026. The preliminary round will be held online from 4th May to 10th May 2026. The final round will be held from 18th May to 24th May 2026. The grand finale will be held physically at Dewan Kejora, N28a, UTM Johor Bahru on 24th May 2026.",
         },
         {
-            question: "How do I get to UTMJB if I'm not a student from UTM?",
-            answer: "E-hailing services such as Grab, Maxim, and AirAsia Ride are recommended for transportation throughout the area. If you are flying to JB, you will arrive at Senai Airport. If you are taking a bus to JB, you will arrive at Larkin Bus Central.",
-        },
-        {
             question: "Who can participate?",
-            answer: "All undergraduate level university students around Malaysia.",
-        },
-        {
-            question: "Who can fill in the Google Form?",
-            answer: "Anyone can fill in the Google Form. However, only 1 response is needed for each team.",
+            answer: "All undergraduate level university students around Malaysia are eligible to participate.",
         },
         {
             question: "How much is the registration fee?",
-            answer: "We are not claiming any registration fee from participants. It's free of charge.",
+            answer: "Registration is completely free of charge.",
         },
         {
-            question: "Can I join if I only have 1 member as a team?",
-            answer: "Absolutely! The team can consist of up to 5 members.",
+            question: "How do I get to UTMJB if I'm not a UTM student?",
+            answer: "E-hailing services such as Grab, Maxim, and AirAsia Ride are recommended for transportation throughout the area. If you are flying to JB, you will arrive at Senai Airport. If you are taking a bus to JB, you will arrive at Larkin Bus Central.",
         },
         {
             question: "Can I back out from the competition?",
