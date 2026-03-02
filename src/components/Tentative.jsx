@@ -5,7 +5,7 @@ const Tentative = () => {
     const { tentative } = eventData;
 
     return (
-        <section id="tentative" className="py-20 px-4 sm:px-4 relative section-alt">
+        <section id="tentative" className="py-20 px-4 relative section-alt overflow-hidden">
             <div className="max-w-4xl mx-auto">
                 {/* Section Title */}
                 <motion.h2
@@ -13,7 +13,7 @@ const Tentative = () => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.3 }}
-                    className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-4 gradient-text"
+                    className="text-3xl sm:text-5xl md:text-6xl font-bold text-center mb-4 gradient-text"
                 >
                     Event Tentative
                 </motion.h2>

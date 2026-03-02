@@ -33,8 +33,8 @@ const CountdownTimer = () => {
 
     const TimeUnit = ({ value, label }) => (
         <div className="flex flex-col items-center">
-            <div className="glass-effect rounded-2xl p-4 sm:p-6 md:p-8 min-w-[70px] sm:min-w-[90px] md:min-w-[110px] transform hover:scale-105 transition-transform duration-300">
-                <div className="text-3xl sm:text-4xl md:text-6xl font-bold gradient-text">
+            <div className="glass-effect rounded-2xl p-3 sm:p-6 md:p-8 min-w-[60px] sm:min-w-[85px] md:min-w-[110px] transform hover:scale-105 transition-transform duration-300">
+                <div className="text-2xl sm:text-4xl md:text-6xl font-bold gradient-text">
                     {String(value).padStart(2, '0')}
                 </div>
             </div>
@@ -45,7 +45,7 @@ const CountdownTimer = () => {
     );
 
     return (
-        <div className="flex gap-3 sm:gap-4 md:gap-6 justify-center flex-wrap">
+        <div className="flex gap-2 sm:gap-4 md:gap-6 justify-center w-full px-2">
             <TimeUnit value={timeLeft.days} label="Days" />
             <TimeUnit value={timeLeft.hours} label="Hours" />
             <TimeUnit value={timeLeft.minutes} label="Minutes" />

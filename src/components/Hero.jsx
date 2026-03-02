@@ -13,7 +13,7 @@ const fadeUp = {
 
 const Hero = ({ onRegisterClick }) => {
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center px-4 pt-40 pb-24 relative overflow-hidden">
+        <section id="home" className="min-h-screen flex items-center justify-center px-4 pt-24 sm:pt-36 pb-24 relative overflow-hidden w-full">
             {/* Subtle warm background blobs */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <motion.div
@@ -26,7 +26,7 @@ const Hero = ({ onRegisterClick }) => {
                     animate={{ y: [0, 20, 0] }}
                     transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
                 />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-hackathon-blush/10 rounded-full blur-3xl" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] max-w-lg max-h-lg bg-hackathon-blush/10 rounded-full blur-3xl" />
             </div>
 
             <div className="max-w-6xl mx-auto text-center relative z-10">
@@ -48,7 +48,7 @@ const Hero = ({ onRegisterClick }) => {
                     variants={fadeUp}
                     initial="hidden"
                     animate="visible"
-                    className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-4 gradient-text leading-tight"
+                    className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 gradient-text leading-tight break-words"
                 >
                     {eventData.hero.title}
                 </motion.h1>
