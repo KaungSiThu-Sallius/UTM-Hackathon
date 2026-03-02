@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { eventData } from '../eventData';
 
 const socialIcons = {
@@ -40,7 +41,13 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="py-12 px-4 border-t border-white/10 relative">
+        <motion.footer
+            variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' } } }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            className="py-12 px-4 border-t border-white/10 relative"
+        >
             <div className="max-w-6xl mx-auto">
                 <div className="grid md:grid-cols-3 gap-10 mb-10">
                     {/* Brand */}
@@ -109,7 +116,7 @@ const Footer = () => {
                     </p>
                 </div>
             </div>
-        </footer>
+        </motion.footer>
     );
 };
 

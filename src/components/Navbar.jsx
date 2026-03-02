@@ -7,17 +7,17 @@ const navLinks = [
         dropdown: [
             { label: 'Tentative', href: '#tentative' },
             { label: 'Rules', href: '#rules' },
-            { label: 'FAQs', href: '#faq' },
         ],
     },
-    {
-        label: 'Experts',
-        dropdown: [
-            { label: 'Speakers', href: '#speakers' },
-            { label: 'Mentors', href: '#mentors' },
-        ],
-    },
+    // {
+    //     label: 'Experts',
+    //     dropdown: [
+    //         { label: 'Speakers', href: '#speakers' },
+    //         { label: 'Mentors', href: '#mentors' },
+    //     ],
+    // },
     { label: 'Sponsors', href: '#sponsors' },
+    { label: 'FAQ', href: '#faq' },
 ];
 
 const Navbar = ({ onRegisterClick }) => {

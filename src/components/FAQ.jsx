@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { eventData } from '../eventData';
 
 const FAQ = () => {
@@ -13,18 +14,42 @@ const FAQ = () => {
         <section id="faq" className="py-20 px-4 relative">
             <div className="max-w-4xl mx-auto">
                 {/* Section Title */}
-                <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-4 gradient-text">
+                <motion.h2
+                    variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-4 gradient-text"
+                >
                     Frequently Asked Questions
-                </h2>
-                <p className="text-center text-hackathon-cream/60 mb-12 text-sm sm:text-base">
+                </motion.h2>
+                <motion.p
+                    variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.1 } } }}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="text-center text-hackathon-cream/60 mb-12 text-sm sm:text-base"
+                >
                     Got questions? We've got answers.
-                </p>
+                </motion.p>
 
                 {/* FAQ Accordion */}
                 <div className="space-y-4">
                     {faqs.map((faq, index) => (
-                        <div
+                        <motion.div
                             key={index}
+                            custom={index}
+                            variants={{
+                                hidden: { opacity: 0, y: 25 },
+                                visible: (i) => ({
+                                    opacity: 1,
+                                    y: 0,
+                                    transition: { duration: 0.5, delay: i * 0.07, ease: 'easeOut' },
+                                }),
+                            }}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.15 }}
                             className="glass-effect rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-hackathon-coral/20"
                         >
                             <button
@@ -53,7 +78,7 @@ const FAQ = () => {
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>

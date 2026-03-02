@@ -1,4 +1,10 @@
+import { motion } from 'framer-motion';
 import { eventData } from '../eventData';
+
+const fadeUp = (delay = 0) => ({
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay, ease: 'easeOut' } },
+});
 
 const Sponsors = () => {
     const { sponsors } = eventData;
@@ -7,22 +13,40 @@ const Sponsors = () => {
         <section id="sponsors" className="py-20 px-4 relative">
             <div className="max-w-6xl mx-auto">
                 {/* Section Title */}
-                <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-4 gradient-text">
+                <motion.h2
+                    variants={fadeUp(0)}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-4 gradient-text"
+                >
                     {sponsors.title}
-                </h2>
-                <p className="text-center text-hackathon-cream/60 mb-14 text-sm sm:text-base">
+                </motion.h2>
+                <motion.p
+                    variants={fadeUp(0.1)}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="text-center text-hackathon-cream/60 mb-14 text-sm sm:text-base"
+                >
                     Supporting the next generation of innovators
-                </p>
+                </motion.p>
 
                 {/* TBD state */}
                 {sponsors.comingSoon && (
-                    <div className="glass-effect rounded-3xl p-12 text-center max-w-xl mx-auto mb-14">
+                    <motion.div
+                        variants={{ hidden: { opacity: 0, scale: 0.9 }, visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } } }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                        className="glass-effect rounded-3xl p-12 text-center max-w-xl mx-auto mb-14"
+                    >
                         <div className="text-5xl mb-4">🤝</div>
                         <h3 className="text-2xl font-bold text-hackathon-coral mb-2">Sponsors Coming Soon</h3>
                         <p className="text-hackathon-cream/70 text-sm">
                             We are currently in the process of confirming our sponsors. Stay tuned!
                         </p>
-                    </div>
+                    </motion.div>
                 )}
 
                 {/* Sponsor tiers (shown when not empty) */}
@@ -30,19 +54,36 @@ const Sponsors = () => {
                     <div className="space-y-12 mb-14">
                         {sponsors.tiers.map((tier, tierIndex) => (
                             <div key={tierIndex}>
-                                <div className="text-center mb-8">
+                                <motion.div
+                                    variants={fadeUp(tierIndex * 0.1)}
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    viewport={{ once: true, amount: 0.3 }}
+                                    className="text-center mb-8"
+                                >
                                     <h3 className={`text-2xl sm:text-3xl font-bold bg-gradient-to-r ${tier.color} bg-clip-text text-transparent inline-block px-6 py-2`}>
                                         {tier.name}
                                     </h3>
-                                </div>
+                                </motion.div>
                                 <div className={`grid gap-6 ${tier.name === 'Platinum' ? 'grid-cols-1 sm:grid-cols-2 max-w-3xl mx-auto' :
-                                        tier.name === 'Gold' ? 'grid-cols-2 md:grid-cols-3' :
-                                            'grid-cols-2 md:grid-cols-4'
+                                    tier.name === 'Gold' ? 'grid-cols-2 md:grid-cols-3' :
+                                        'grid-cols-2 md:grid-cols-4'
                                     }`}>
                                     {tier.companies.map((company, i) => (
-                                        <div key={i} className="glass-effect rounded-2xl p-6 flex items-center justify-center hover:scale-105 transition-all duration-300">
+                                        <motion.div
+                                            key={i}
+                                            custom={i}
+                                            variants={{
+                                                hidden: { opacity: 0, y: 20 },
+                                                visible: (idx) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: idx * 0.07 } }),
+                                            }}
+                                            initial="hidden"
+                                            whileInView="visible"
+                                            viewport={{ once: true }}
+                                            className="glass-effect rounded-2xl p-6 flex items-center justify-center hover:scale-105 transition-all duration-300"
+                                        >
                                             <img src={company.logo} alt={company.name} className="w-full h-auto object-contain" />
-                                        </div>
+                                        </motion.div>
                                     ))}
                                 </div>
                             </div>
@@ -51,7 +92,13 @@ const Sponsors = () => {
                 )}
 
                 {/* Interested in Sponsoring CTA */}
-                <div className="glass-effect rounded-3xl p-8 sm:p-12 max-w-3xl mx-auto">
+                <motion.div
+                    variants={{ hidden: { opacity: 0, y: 40 }, visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' } } }}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.2 }}
+                    className="glass-effect rounded-3xl p-8 sm:p-12 max-w-3xl mx-auto"
+                >
                     <div className="text-center mb-8">
                         <h3 className="text-2xl sm:text-3xl font-bold text-hackathon-coral mb-3">
                             {sponsors.interested.title}
@@ -105,7 +152,7 @@ const Sponsors = () => {
                             </div>
                         ))}
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     );
