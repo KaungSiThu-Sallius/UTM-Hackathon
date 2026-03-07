@@ -20,11 +20,7 @@ export const eventData = {
     about: {
         title: "About UTMxHackathon'26",
         content: `UTMxHackathon'26 is an exciting innovation-driven event that brings all passionate students together to transform innovative ideas into powerful solutions. It is organized by Club PERSAKA from Universiti Teknologi Malaysia. This hackathon provides a platform for participants to collaborate, think critically, and tackle real-world challenges through technology and innovation. Throughout the event, teams will work intensively to develop their ideas, connect with like-minded innovators, and showcase their creativity in a competitive yet inspiring environment.`,
-        stats: [
-            { number: "24", label: "Hours" },
-            { number: "5", label: "Max Team Size" },
-            { number: "May 24", label: "Grand Finale" },
-        ],
+        stats: [],
     },
 
     // Tentative / Timeline
@@ -65,29 +61,38 @@ export const eventData = {
     faqs: [
         {
             question: "What is UTMxHackathon?",
-            answer: "UTMxHackathon is a hackathon event organised by the Persatuan Mahasiswa Sains Komputer (PERSAKA) at Universiti Teknologi Malaysia (UTM) where teams of students collaborate to build innovative tech solutions. Participants work on real-world problem statements, design prototypes or applications, and pitch their ideas to judges.",
+            answer: "UTMxHackathon is a hackathon event organised mainly by the Persatuan Mahasiswa Sains Komputer (PERSAKA) at Universiti Teknologi Malaysia (UTM) where teams of students collaborate to build innovative tech solutions. It's not about 'hacking' in the cybersecurity sense — instead, participants work on real-world problem statements, design prototypes or applications and pitch their ideas to judges.",
         },
         {
             question: "Where and when will the event be held?",
-            answer: "Workshops will be carried out online from 9th March 2026 until 3rd May 2026. The opening ceremony and participant briefing will be held online on 4th May 2026. The preliminary round will be held online from 4th May to 10th May 2026. The final round will be held from 18th May to 24th May 2026. The grand finale will be held physically at Dewan Kejora, N28a, UTM Johor Bahru on 24th May 2026.",
+            answer: "9th March – 3rd May 2026: Workshop (Online)\n4th May 2026: Opening Ceremony & Participant Briefing (Online)\n4th – 10th May 2026: Preliminary Round (Online)\n18th – 24th May 2026: Final Round\n24th May 2026: Grand Final — Physical event at Dewan Kejora N28a, UTM Johor Bahru",
+        },
+        {
+            question: "How do I get to UTMJB if I'm not a student from UTM?",
+            answer: "E-hailing services such as Grab, Maxim and AirAsia Ride are recommended for transportation throughout the area. If you are flying to JB, you will arrive at Senai Airport. If you are taking a bus to JB, you will arrive at Larkin Bus Central.",
         },
         {
             question: "Who can participate?",
             answer: "All undergraduate level university students around Malaysia are eligible to participate.",
         },
         {
-            question: "How much is the registration fee?",
-            answer: "Registration is completely free of charge.",
+            question: "Who should register in the Kooq System?",
+            answer: "All team members must have a Kooq account. The team leader creates the team and adds members, who must register themselves under the team.",
         },
         {
-            question: "How do I get to UTMJB if I'm not a UTM student?",
-            answer: "E-hailing services such as Grab, Maxim, and AirAsia Ride are recommended for transportation throughout the area. If you are flying to JB, you will arrive at Senai Airport. If you are taking a bus to JB, you will arrive at Larkin Bus Central.",
+            question: "How much is the registration fee?",
+            answer: "We are not claiming any registration fee from participants. It's completely free of charge.",
+        },
+        {
+            question: "Can I join if I only have 1 member as a team?",
+            answer: "Absolutely! You can join as a solo participant. The team can consist of up to 5 members.",
         },
         {
             question: "Can I back out from the competition?",
-            answer: "Yes, all teams are free to back out from the competition at any phase if they wish to.",
+            answer: "Yes, all teams are free to back out from the competition at any phase if they wish to. However, teams that withdraw will be disqualified and will not receive a certificate.",
         },
     ],
+
 
     // Sponsors Section
     sponsors: {
@@ -97,7 +102,7 @@ export const eventData = {
         interested: {
             title: "Interested in Sponsoring?",
             description: "Join us in supporting the next generation of innovators and get your brand in front of talented students. Download our prospectus to find out more.",
-            prospectusLink: "/prospectus.pdf",
+            prospectusLink: "https://drive.google.com/file/d/1oMDbV1Erx0IXjCj2s_mTDX44Fyh8_sd_/view?usp=drive_link",
             contacts: [
                 {
                     name: "Hoe Zhi Wan",

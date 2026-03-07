@@ -3,15 +3,16 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    overflow-x: hidden;
+
+  html,
+  body {
+    overflow-x: clip;
+    width: 100%;
   }
 
   body {
     @apply m-0 min-h-screen bg-hackathon-beige text-hackathon-gray;
     background: linear-gradient(145deg, #FDF6EE 0%, #F5E6D3 50%, #EDD9C0 100%);
-    overflow-x: hidden;
-    width: 100%;
   }
 }
 

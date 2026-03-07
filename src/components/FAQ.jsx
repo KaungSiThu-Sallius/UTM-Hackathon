@@ -73,9 +73,11 @@ const FAQ = () => {
                                 className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-96' : 'max-h-0'}`}
                             >
                                 <div className="px-6 sm:px-8 pb-6 sm:pb-8">
-                                    <p className="text-hackathon-gray/80 text-sm sm:text-base leading-relaxed border-t border-hackathon-wine/10 pt-4">
-                                        {faq.answer}
-                                    </p>
+                                    <div className="text-hackathon-gray/80 text-sm sm:text-base leading-relaxed border-t border-hackathon-wine/10 pt-4 space-y-1">
+                                        {faq.answer.split('\n').map((line, i) => (
+                                            <p key={i}>{line}</p>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         </motion.div>
