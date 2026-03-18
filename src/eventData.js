@@ -61,36 +61,44 @@ export const eventData = {
     faqs: [
         {
             question: "What is UTMxHackathon?",
-            answer: "UTMxHackathon is a hackathon event organised mainly by the Persatuan Mahasiswa Sains Komputer (PERSAKA) at Universiti Teknologi Malaysia (UTM) where teams of students collaborate to build innovative tech solutions. It's not about 'hacking' in the cybersecurity sense — instead, participants work on real-world problem statements, design prototypes or applications and pitch their ideas to judges.",
+            answer: "UTMxHackathon is a hackathon event organised mainly by the Persatuan Mahasiswa Sains Komputer (PERSAKA) at Universiti Teknologi Malaysia (UTM) where teams of students collaborate to build innovative tech solutions. It’s not about ‘hacking’ in the cybersecurity sense, instead, participants work on real-world problem statements, design prototypes or applications and pitch their ideas to judges"
         },
         {
-            question: "Where and when will the event be held?",
-            answer: "9th March – 3rd May 2026: Workshop (Online)\n4th May 2026: Opening Ceremony & Participant Briefing (Online)\n4th – 10th May 2026: Preliminary Round (Online)\n18th – 24th May 2026: Final Round\n24th May 2026: Grand Final — Physical event at Dewan Kejora N28a, UTM Johor Bahru",
+            question: "Where and when the event will be held?",
+            answer: "Date\nAgenda\nVenue\n9/3 - 3/5\nWorkshop\nOnline\n4/5 \nOpening Ceremony & Participant Briefing\nOnline\n4/5 - 10/5\nPreliminary Round\nOnline\n18/5 - 24/5\nFinal Round\nOnline\n24/5\nGrand Final\nDewan Kejora N28a, UTM JB"
         },
         {
-            question: "How do I get to UTMJB if I'm not a student from UTM?",
-            answer: "E-hailing services such as Grab, Maxim and AirAsia Ride are recommended for transportation throughout the area. If you are flying to JB, you will arrive at Senai Airport. If you are taking a bus to JB, you will arrive at Larkin Bus Central.",
+            question: "How do I get to UTMJB if I’m not a student from UTM",
+            answer: "E-hailing services such as Grab, Maxim and Airasia Ride are recommended as the transportation throughout the area. If you are flying to JB, you will arrive at Senai Airport. If you are taking bus to JB, you will arrive at Larkin Bus Central"
         },
         {
             question: "Who can participate?",
-            answer: "All undergraduate level university students around Malaysia are eligible to participate.",
+            answer: "All undergraduate level university students around Malaysia"
         },
         {
-            question: "Who should register in the Kooq System?",
-            answer: "All team members must have a Kooq account. The team leader creates the team and adds members, who must register themselves under the team.",
+            question: "Who should register in Kooq System?",
+            answer: "All team members must have a Kooq account. The team leader creates the team and adds members, who must register themselves under the team."
         },
         {
             question: "How much is the registration fee?",
-            answer: "We are not claiming any registration fee from participants. It's completely free of charge.",
+            answer: "We are not claiming any registration fee from participants. It’s free of charge."
         },
         {
             question: "Can I join if I only have 1 member as a team?",
-            answer: "Absolutely! You can join as a solo participant. The team can consist of up to 5 members.",
+            answer: "Absolutely can. The team can consists up to 5 members"
         },
         {
             question: "Can I back out from the competition?",
-            answer: "Yes, all teams are free to back out from the competition at any phase if they wish to. However, teams that withdraw will be disqualified and will not receive a certificate.",
+            answer: "Yes, all teams are free to back out from the competition at any phase if they wish to but teams will be disqualified and won’t receive a certificate"
         },
+        {
+            question: "Will we provide transport and accommodation for event day?",
+            answer: "Transportation and accommodation will not be provided for participants. Participants are required to arrange their own transport and stay if needed."
+        },
+        {
+            question: "Why joining our hackathon and what are the benefits?",
+            answer: "Gain hands-on experience on real ideas and build innovative solution while applying technical and creative skills\nLearn new tools, technologies and problem-solving approaches through workshop and collaboration\nConnect with like-minded participants\nShowcase project that can boost your portfolio, resume or university applications\nWin exciting prizes and gain recognition for your ideas and creativity"
+        }
     ],
 
 
