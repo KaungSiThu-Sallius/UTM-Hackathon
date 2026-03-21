@@ -61,19 +61,19 @@ export const eventData = {
     faqs: [
         {
             question: "What is UTMxHackathon?",
-            answer: "UTMxHackathon is a hackathon event organised mainly by the Persatuan Mahasiswa Sains Komputer (PERSAKA) at Universiti Teknologi Malaysia (UTM) where teams of students collaborate to build innovative tech solutions. It’s not about ‘hacking’ in the cybersecurity sense, instead, participants work on real-world problem statements, design prototypes or applications and pitch their ideas to judges"
+            answer: "UTMxHackathon is a hackathon event organised mainly by the Persatuan Mahasiswa Sains Komputer (PERSAKA) at Universiti Teknologi Malaysia (UTM) where teams of students collaborate to build innovative tech solutions. It’s not about ‘hacking’ in the cybersecurity sense, instead, participants work on real-world problem statements, design prototypes or applications and pitch their ideas to judges."
         },
         {
             question: "Where and when the event will be held?",
-            answer: "• 9/3 - 3/5 : Workshop (Online)\n• 4/5 : Opening Ceremony & Participant Briefing (Online)\n• 4/5 - 10/5 : Preliminary Round (Online)\n• 18/5 - 24/5 : Final Round (Online)\n• 24/5 : Grand Final (Dewan Kejora N28a, UTM JB)"
+            answer: "• 9/3 - 3/5 : Workshop (Online)\n• 4/5 : Opening Ceremony & Participant Briefing (Online)\n• 4/5 - 10/5 : Preliminary Round (Online)\n• 18/5 - 24/5 : Final Round (Online)\n• 24/5 : Grand Final (Dewan Kejora N28a, UTM JB)."
         },
         {
             question: "How do I get to UTMJB if I’m not a student from UTM",
-            answer: "E-hailing services such as Grab, Maxim and Airasia Ride are recommended as the transportation throughout the area. If you are flying to JB, you will arrive at Senai Airport. If you are taking bus to JB, you will arrive at Larkin Bus Central"
+            answer: "E-hailing services such as Grab, Maxim and Airasia Ride are recommended as the transportation throughout the area. If you are flying to JB, you will arrive at Senai Airport. If you are taking bus to JB, you will arrive at Larkin Bus Central."
         },
         {
             question: "Who can participate?",
-            answer: "All undergraduate level university students around Malaysia"
+            answer: "All undergraduate level university students around Malaysia."
         },
         {
             question: "Who should register in Kooq System?",
@@ -85,7 +85,7 @@ export const eventData = {
         },
         {
             question: "Can I join if I only have 1 member as a team?",
-            answer: "Absolutely can. The team can consists up to 5 members"
+            answer: "Absolutely can. The team can consists up to 5 members."
         },
         {
             question: "Can I back out from the competition?",
@@ -97,7 +97,7 @@ export const eventData = {
         },
         {
             question: "Why joining our hackathon and what are the benefits?",
-            answer: "Gain hands-on experience on real ideas and build innovative solution while applying technical and creative skills\nLearn new tools, technologies and problem-solving approaches through workshop and collaboration\nConnect with like-minded participants\nShowcase project that can boost your portfolio, resume or university applications\nWin exciting prizes and gain recognition for your ideas and creativity"
+            answer: "Gain hands-on experience on real ideas and build innovative solution while applying technical and creative skills. Learn new tools, technologies and problem-solving approaches through workshop and collaboration.Connect with like-minded participants. Showcase project that can boost your portfolio, resume or university applications. Win exciting prizes and gain recognition for your ideas and creativity."
         }
     ],
 
