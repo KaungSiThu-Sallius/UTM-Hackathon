@@ -65,7 +65,7 @@ export const eventData = {
         },
         {
             question: "Where and when the event will be held?",
-            answer: "Date\nAgenda\nVenue\n9/3 - 3/5\nWorkshop\nOnline\n4/5 \nOpening Ceremony & Participant Briefing\nOnline\n4/5 - 10/5\nPreliminary Round\nOnline\n18/5 - 24/5\nFinal Round\nOnline\n24/5\nGrand Final\nDewan Kejora N28a, UTM JB"
+            answer: "• 9/3 - 3/5 : Workshop (Online)\n• 4/5 : Opening Ceremony & Participant Briefing (Online)\n• 4/5 - 10/5 : Preliminary Round (Online)\n• 18/5 - 24/5 : Final Round (Online)\n• 24/5 : Grand Final (Dewan Kejora N28a, UTM JB)"
         },
         {
             question: "How do I get to UTMJB if I’m not a student from UTM",
