@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Tentative from './components/Tentative';
 import Rules from './components/Rules';
+import Prizes from './components/Prizes';
 import FAQ from './components/FAQ';
 import Sponsors from './components/Sponsors';
 import Footer from './components/Footer';
@@ -19,6 +20,7 @@ function App() {
       <About />
       <Tentative />
       <Rules />
+      <Prizes />
       <FAQ />
       <Sponsors />
       <Footer />

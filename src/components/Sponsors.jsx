@@ -65,7 +65,9 @@ const Sponsors = () => {
                                         {tier.name}
                                     </h3>
                                 </motion.div>
-                                <div className={`grid gap-6 ${tier.name === 'Platinum' ? 'grid-cols-1 sm:grid-cols-2 max-w-3xl mx-auto' :
+                                <div className={`grid gap-6 ${tier.companies.length === 1 ? 'grid-cols-1 max-w-xs mx-auto' :
+                                    tier.companies.length <= 2 ? 'grid-cols-2 max-w-2xl mx-auto' :
+                                    tier.name === 'Platinum' ? 'grid-cols-1 sm:grid-cols-2 max-w-3xl mx-auto' :
                                     tier.name === 'Gold' ? 'grid-cols-2 md:grid-cols-3' :
                                         'grid-cols-2 md:grid-cols-4'
                                     }`}>
@@ -80,9 +82,13 @@ const Sponsors = () => {
                                             initial="hidden"
                                             whileInView="visible"
                                             viewport={{ once: true }}
-                                            className="glass-effect rounded-2xl p-6 flex items-center justify-center hover:scale-105 transition-all duration-300"
+                                            className="glass-effect rounded-2xl p-8 flex items-center justify-center hover:scale-105 transition-all duration-300 bg-white/80"
                                         >
-                                            <img src={company.logo} alt={company.name} className="w-full h-auto object-contain" />
+                                            <img
+                                                src={company.logo}
+                                                alt={company.name}
+                                                className="max-h-20 w-full object-contain"
+                                            />
                                         </motion.div>
                                     ))}
                                 </div>

@@ -7,6 +7,7 @@ const navLinks = [
         dropdown: [
             { label: 'Tentative', href: '#tentative' },
             { label: 'Rules', href: '#rules' },
+            { label: 'Prizes', href: '#prizes' },
         ],
     },
     { label: 'FAQ', href: '#faq' },

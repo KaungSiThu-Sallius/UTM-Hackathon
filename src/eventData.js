@@ -102,11 +102,63 @@ export const eventData = {
     ],
 
 
+    // Prize Pool Section
+    prizes: {
+        title: "Prize Pool",
+        subtitle: "Compete for glory and exciting rewards",
+        totalPrize: "RM 1,200",
+        items: [
+            {
+                place: "1st Place",
+                label: "Champions",
+                amount: "RM500",
+                icon: "🥇",
+                highlight: true,
+            },
+            {
+                place: "2nd Place",
+                label: "1st Runner Up",
+                amount: "RM300",
+                icon: "🥈",
+                highlight: false,
+            },
+            {
+                place: "3rd Place",
+                label: "2nd Runner Up",
+                amount: "RM200",
+                icon: "🥉",
+                highlight: false,
+            },
+            {
+                place: "Best Innovation",
+                label: "Special Award",
+                amount: "RM100",
+                icon: "💡",
+                highlight: false,
+            },
+            {
+                place: "Best Presenter",
+                label: "Special Award",
+                amount: "RM100",
+                icon: "🎤",
+                highlight: false,
+            },
+        ],
+    },
+
     // Sponsors Section
     sponsors: {
         title: "Our Sponsors",
-        comingSoon: true,
-        tiers: [], // TBD – will be updated when sponsors are confirmed
+        comingSoon: false,
+        tiers: [
+            {
+                name: "Official Sponsor",
+                color: "from-amber-400 to-yellow-500",
+                companies: [
+                    { name: "RunCloud", logo: "/RC Logo.jpeg" },
+                ],
+            },
+        ],
         interested: {
             title: "Interested in Sponsoring?",
             description: "Join us in supporting the next generation of innovators and get your brand in front of talented students. Download our prospectus to find out more.",
