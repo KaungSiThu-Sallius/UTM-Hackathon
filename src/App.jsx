@@ -4,8 +4,10 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Tentative from './components/Tentative';
 import Rules from './components/Rules';
+import Prizes from './components/Prizes';
 import FAQ from './components/FAQ';
 import Sponsors from './components/Sponsors';
+import Mentors from './components/Mentors';
 import Footer from './components/Footer';
 import RegistrationModal from './components/RegistrationModal';
 
@@ -27,8 +29,10 @@ function App() {
             <About />
             <Tentative />
             <Rules />
+            <Prizes />
             <FAQ />
             <Sponsors />
+            <Mentors />
             <Footer />
             <RegistrationModal isOpen={isModalOpen} onClose={handleCloseModal} />
         </div>

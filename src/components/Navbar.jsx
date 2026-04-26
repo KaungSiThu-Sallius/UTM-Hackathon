@@ -12,6 +12,7 @@ const navLinks = [
     },
     { label: 'FAQ', href: '#faq' },
     { label: 'Sponsors', href: '#sponsors' },
+    { label: 'Mentors', href: '#mentors' },
 ];
 
 const Navbar = ({ onRegisterClick }) => {

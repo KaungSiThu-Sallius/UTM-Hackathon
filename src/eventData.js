@@ -106,26 +106,26 @@ export const eventData = {
     prizes: {
         title: "Prize Pool",
         subtitle: "Compete for glory and exciting rewards",
-        totalPrize: "RM 1,200",
+        totalPrize: "RM 2,000",
         items: [
             {
                 place: "1st Place",
                 label: "Champions",
-                amount: "RM500",
+                amount: "RM1,000",
                 icon: "🥇",
                 highlight: true,
             },
             {
                 place: "2nd Place",
                 label: "1st Runner Up",
-                amount: "RM300",
+                amount: "RM500",
                 icon: "🥈",
                 highlight: false,
             },
             {
                 place: "3rd Place",
                 label: "2nd Runner Up",
-                amount: "RM200",
+                amount: "RM300",
                 icon: "🥉",
                 highlight: false,
             },
@@ -156,6 +156,7 @@ export const eventData = {
                 color: "from-amber-400 to-yellow-500",
                 companies: [
                     { name: "RunCloud", logo: "/RC Logo.jpeg" },
+                    { name: "GX Bank", logo: "/gx_bank_logo.png" },
                 ],
             },
         ],
@@ -179,6 +180,57 @@ export const eventData = {
             ],
         },
     },
+
+    // Mentors Section
+    mentors: [
+        {
+            name: "Khairol 'Izzul Firdaus Bin Khairol Hisam",
+            image: "/Khairol 'Izzul Firdaus Bin Khairol Hisam.jpeg",
+            positions: [
+                "Vice President of Software Engineering at KOPIT (Koperasi Usahawan Informasi Teknologi Malaysia Berhad)",
+                "CEO & Founder of Facez Co.",
+            ],
+            summary: "At KOPIT, one of Malaysia's few IT-focused cooperatives working closely with government initiatives, I have led and managed multiple national-level technology projects, serving as Project Manager for three government projects. At Facez Co., I focus on building scalable digital solutions across multiple domains including landing pages for SMEs, kitchen and food ordering POS systems, event management platforms, and AI-powered video solutions for marketing and content creation.",
+            achievements: [
+                "Winner of 7 hackathons (Top 3 placements and special awards across competitions)",
+            ],
+            tags: ["Project Management", "AI Video", "POS Systems", "Gov Tech"],
+        },
+        {
+            name: "Muhammad Muadz bin Jamain",
+            image: "/Muhammad Muadz bin Jamain.jpeg",
+            positions: [
+                "Founder & CEO of Aethervision Ent.",
+                "Owner of AzanSyncTV AI",
+                "5× AI Hackathon Winner · 2× National Hackathon Judge",
+            ],
+            summary: "Leading end-to-end AI software & hardware ecosystems for offices, schools, homes & mosques across Malaysia with 50+ deployments. Specialised in AI-powered digital display systems & cross-platform integration, scaled via agent networks.",
+            achievements: [
+                "🏆 Champion — Robotic & Coding Conquest 2025 (International AI & IoT for SDG Hackathon 🌐🇧🇳)",
+                "🏆 Champion — Varsity AI Hackathon 2025 (National 🇲🇾)",
+                "🏆 Winner — Deriv <AI> Hackathon (Deriv Ltd & JomHack)",
+                "🏆 2nd Runner-up — Microsoft APAC AI for Accessibility Hackathon",
+                "🏆 2nd Place — Sustainable Entrepreneurial Mindset Showcase (UTM)",
+                "🏅 Google AI KitaHack Top 10 Finalist (600+ participants)",
+                "Judge — CodeNection 2025 (National 🇲🇾) @ MMU",
+                "Judge — Google KitaHack 2026 @ Sunway University",
+            ],
+            tags: ["AI Hardware", "Digital Signage", "IoT", "Entrepreneurship"],
+        },
+        {
+            name: "Muhammad Nasrul Hakimi Zamzam",
+            image: "/Muhammad Nasrul Hakimi Zamzam.jpeg",
+            positions: [
+                "Technology Graduate at SEEK (APAC)",
+            ],
+            summary: "At SEEK, I provide technical expertise supporting SEEK's APAC strategy through Salesforce-based platforms spanning Sales, Service, Billing, and Marketing. I work across Salesforce Sales Cloud, Service Cloud, and CPQ, while maintaining automation pipelines and CI/CD integrations connecting Salesforce with broader enterprise systems, and partner with internal teams to enhance engagement with candidates and hirers across APAC.",
+            achievements: [
+                "🏆 Champion — Customer Technology Glean AI Agent Hackathon 2025",
+                "🥈 First Runner-Up — Microsoft APAC AI for Accessibility Hackathon 2024",
+            ],
+            tags: ["Salesforce", "CI/CD", "Enterprise Systems", "APAC Tech"],
+        },
+    ],
 
     // Social / Footer Links
     social: {
