@@ -122,7 +122,7 @@ const Navbar = ({ onRegisterClick }) => {
                             onClick={onRegisterClick}
                             className="px-5 py-2.5 bg-hackathon-wine text-white font-bold text-sm rounded-full hover:bg-hackathon-crimson hover:shadow-lg hover:shadow-hackathon-wine/30 hover:scale-105 transition-all duration-200"
                         >
-                            Register Now
+                            Submit
                         </button>
                     </div>
 
@@ -176,7 +176,7 @@ const Navbar = ({ onRegisterClick }) => {
                                 onClick={() => { setMobileOpen(false); onRegisterClick(); }}
                                 className="w-full py-3 bg-hackathon-wine text-white font-bold text-sm rounded-full hover:bg-hackathon-crimson transition-colors"
                             >
-                                Register Now
+                                Submit
                             </button>
                         </div>
                     </div>

@@ -12,7 +12,7 @@ export const eventData = {
         // Countdown target date: Finals Exhibition & Pitching 24 May 2026
         countdownDate: new Date("2026-05-24T00:00:00").getTime(),
         countdownLabel: "Finals Day",
-        registerButtonText: "Register Now",
+        registerButtonText: "Submit",
         registerLink: "https://kooq.my/events/utmxhackathon26",
     },
 
