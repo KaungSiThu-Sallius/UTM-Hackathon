@@ -9,7 +9,7 @@ import FAQ from './components/FAQ';
 import Sponsors from './components/Sponsors';
 import Mentors from './components/Mentors';
 import Footer from './components/Footer';
-import RegistrationModal from './components/RegistrationModal';
+import SubmissionModal from './components/RegistrationModal';
 
 function App() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -34,7 +34,7 @@ function App() {
             <Sponsors />
             <Mentors />
             <Footer />
-            <RegistrationModal isOpen={isModalOpen} onClose={handleCloseModal} />
+            <SubmissionModal isOpen={isModalOpen} onClose={handleCloseModal} />
         </div>
     );
 }

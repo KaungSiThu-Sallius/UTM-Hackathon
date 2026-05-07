@@ -1,7 +1,4 @@
-const REGISTER_URL = 'https://kooq.my/events/utmxhackathon26';
-const QR_SRC = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(REGISTER_URL)}`;
-
-const RegistrationModal = ({ isOpen, onClose }) => {
+const SubmissionModal = ({ isOpen, onClose }) => {
     if (!isOpen) return null;
 
     return (
@@ -10,7 +7,7 @@ const RegistrationModal = ({ isOpen, onClose }) => {
             onClick={onClose}
         >
             <div
-                className="bg-white rounded-3xl p-8 sm:p-10 max-w-sm w-full relative shadow-2xl shadow-hackathon-wine/20 border border-hackathon-wine/10"
+                className="bg-white rounded-3xl p-8 sm:p-10 max-w-md w-full relative shadow-2xl shadow-hackathon-wine/20 border border-hackathon-wine/10"
                 onClick={(e) => e.stopPropagation()}
             >
                 {/* Close button */}
@@ -24,43 +21,52 @@ const RegistrationModal = ({ isOpen, onClose }) => {
                     </svg>
                 </button>
 
-                <div className="text-center">
-                    {/* Title */}
-                    <h2 className="text-2xl sm:text-3xl font-bold gradient-text mb-1">Register Now</h2>
-                    <p className="text-hackathon-gray/60 text-sm mb-6">Scan the QR code or click the link below</p>
+                {/* Title */}
+                <h2 className="text-2xl sm:text-3xl font-bold gradient-text mb-6">Submission via KooQ</h2>
 
-                    {/* QR Code */}
-                    <div className="flex justify-center mb-5">
-                        <div className="bg-white rounded-2xl p-3 shadow-lg shadow-hackathon-wine/10 border border-hackathon-wine/10">
-                            <img
-                                src={QR_SRC}
-                                alt="Scan to Register"
-                                className="w-44 h-44 sm:w-48 sm:h-48"
-                            />
-                        </div>
-                    </div>
+                {/* Requirements */}
+                <div className="mb-5">
+                    <p className="text-hackathon-wine font-semibold text-sm mb-2">Submission requirements:</p>
+                    <ul className="space-y-1.5 text-hackathon-gray text-sm">
+                        <li className="flex items-start gap-2">
+                            <span className="text-hackathon-wine mt-0.5">•</span>
+                            GitHub repository link (prototype source code)
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-hackathon-wine mt-0.5">•</span>
+                            5-minute Youtube video (public or unlisted)
+                        </li>
+                    </ul>
+                </div>
 
-                    {/* Divider */}
-                    <div className="flex items-center gap-3 mb-5">
-                        <div className="flex-1 h-px bg-hackathon-wine/10" />
-                        <span className="text-hackathon-gray/40 text-xs uppercase tracking-widest">or</span>
-                        <div className="flex-1 h-px bg-hackathon-wine/10" />
-                    </div>
+                {/* Divider */}
+                <div className="h-px bg-hackathon-wine/10 mb-5" />
 
-                    {/* CTA link */}
-                    <a
-                        href={REGISTER_URL}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block w-full bg-hackathon-wine text-white font-bold py-4 px-6 rounded-xl hover:bg-hackathon-crimson hover:shadow-xl hover:shadow-hackathon-wine/30 transition-all duration-300 hover:scale-105 text-sm sm:text-base"
-                    >
-                        🔗 Go to Registration Page
-                    </a>
-                    <p className="text-hackathon-gray/40 text-xs mt-3">Opens Koo'Q registration page</p>
+                {/* Notes */}
+                <div>
+                    <p className="text-hackathon-wine font-semibold text-sm mb-2">Notes:</p>
+                    <ul className="space-y-1.5 text-hackathon-gray text-sm">
+                        <li className="flex items-start gap-2">
+                            <span className="text-hackathon-wine mt-0.5">•</span>
+                            Submission must be done via Kooq platform
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-hackathon-wine mt-0.5">•</span>
+                            Ensure all links are working and accessible
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-hackathon-wine mt-0.5">•</span>
+                            Tutorial will be provided later
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="text-hackathon-crimson font-semibold mt-0.5">•</span>
+                            <span className="font-semibold text-hackathon-crimson">Submit before deadline strictly (Which is 11 May, 10pm)</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     );
 };
 
-export default RegistrationModal;
+export default SubmissionModal;
