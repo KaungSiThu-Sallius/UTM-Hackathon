@@ -9,9 +9,9 @@ export const eventData = {
         title: "UTMxHackathon 2026",
         subtitle: "Build. Innovate. Transform.",
         description: "An innovation-driven hackathon organised by Club PERSAKA, Universiti Teknologi Malaysia.",
-        // Countdown target date: Opening Ceremony 4 May 2026
-        countdownDate: new Date("2026-05-04T00:00:00").getTime(),
-        countdownLabel: "Opening Ceremony",
+        // Countdown target date: Finals Exhibition & Pitching 24 May 2026
+        countdownDate: new Date("2026-05-24T00:00:00").getTime(),
+        countdownLabel: "Finals Day",
         registerButtonText: "Register Now",
         registerLink: "https://kooq.my/events/utmxhackathon26",
     },
