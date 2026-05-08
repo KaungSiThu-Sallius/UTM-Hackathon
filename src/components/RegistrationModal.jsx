@@ -30,11 +30,11 @@ const SubmissionModal = ({ isOpen, onClose }) => {
                     <ul className="space-y-1.5 text-hackathon-gray text-sm">
                         <li className="flex items-start gap-2">
                             <span className="text-hackathon-wine mt-0.5">•</span>
-                            GitHub repository link (prototype source code)
+                            High-fidelity prototype
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="text-hackathon-wine mt-0.5">•</span>
-                            5-minute Youtube video (public or unlisted)
+                            5-minute video
                         </li>
                     </ul>
                 </div>

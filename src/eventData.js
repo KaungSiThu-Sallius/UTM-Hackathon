@@ -28,9 +28,8 @@ export const eventData = {
         { date: "2 Mar – 30 Apr", label: "Registration", mode: "Online", icon: "📋" },
         { date: "9 Mar – 3 May", label: "Workshops", mode: "Online", icon: "🛠️" },
         { date: "4 May", label: "Opening Ceremony & Participant Briefing", mode: "Online", icon: "🎉" },
-        { date: "4 – 10 May", label: "Preliminary Round", mode: "Online", icon: "💻" },
-        { date: "18 – 24 May", label: "Finals Round", mode: "Online", icon: "🏆" },
-        { date: "24 May", label: "Finals Round (Exhibition & Pitching)", mode: "Physical – Dewan Kejora, N28a, UTM JB", icon: "🎤" },
+        { date: "4 – 11 May", label: "Preliminary Round", mode: "Online", icon: "💻" },
+        { date: "23 May", label: "Finals Round (Exhibition & Pitching)", mode: "Physical – N28a FC, UTM JB", icon: "🎤" },
     ],
 
     // Rules Section
@@ -41,7 +40,7 @@ export const eventData = {
         },
         {
             title: "Submission Requirements",
-            description: "All submissions are to be made via the Koo'Q system. Required deliverables include a working prototype or demo, a project poster, and a 3-minute pitch video.",
+            description: "All submissions are to be made via the Koo'Q system. Required deliverables include a high-fidelity prototype and a 5-minute pitch video.",
         },
         {
             title: "Evaluation Criteria",
@@ -49,7 +48,7 @@ export const eventData = {
         },
         {
             title: "Preliminary Round",
-            description: "The Preliminary Round will be conducted online from 4 May to 10 May 2026.",
+            description: "The Preliminary Round will be conducted online from 4 May to 11 May 2026.",
         },
         {
             title: "Rule Violations",
@@ -65,7 +64,7 @@ export const eventData = {
         },
         {
             question: "Where and when the event will be held?",
-            answer: "• 9/3 - 3/5 : Workshop (Online)\n• 4/5 : Opening Ceremony & Participant Briefing (Online)\n• 4/5 - 10/5 : Preliminary Round (Online)\n• 18/5 - 24/5 : Final Round (Online)\n• 24/5 : Grand Final (Dewan Kejora N28a, UTM JB)."
+            answer: "• 9/3 - 3/5 : Workshop (Online)\n• 4/5 : Opening Ceremony & Participant Briefing (Online)\n• 4/5 - 11/5 : Preliminary Round (Online)\n• 23/5 : Final Round & Closing Ceremony (N28a FC, UTM JB)."
         },
         {
             question: "How do I get to UTMJB if I’m not a student from UTM",
